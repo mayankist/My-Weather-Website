@@ -1,0 +1,66 @@
+<center>
+<h1>Weather Forecast</h1>
+<hr>
+<h2><%= data.name %></h2>
+<h3><b><%= parseInt(data.main.temp / 10); %></b> degrees | <%= data.weather[0].description %> | clouds <%= data.clouds.all %></h3>
+<hr>
+<a href="/"><button>Search Again!</button></a>
+</center>
+
+
+https://api.openweathermap.org/data/2.5/onecall?lat=33.441792&lon=-94.037689&exclude=hourly,daily&appid=4d3a76f532b0aa7d2f90fcbc4daf5cb3
+
+
+// moments and time javascript function============================
+
+// for(var i=0;i<z.length;i++){
+// 	x[i].innerHTML = d.getDate() + i;
+// 	y[i].innerHTML = d.getMonth() + 1;
+// 	z[i].innerHTML = d.getFullYear();
+// }
+
+// nums = [0,2,4,6,7,9,11];
+// date = d.getDate();
+// month = d.getMonth();
+// year = d.getFullYear();
+
+// for(var i=0;i<x.length;i++){
+// 	date += 1;
+// 	preDate(date,month,year);
+// }
+
+// function preDate(date,month,year){
+// 	if(date===31 && month===11){
+// 		z[i + 1].innerHTML = year + 1;
+// 		y[i + 1].innerHTML = 1;
+// 		x[i + 1].innerHTML = 1;
+// 	}else if(compare()){
+// 		if(date===31){
+// 			x[i + 1].innerHTML = 1;
+// 			y[i + 1].innerHTML = month + 1;
+// 			z[i + 1].innerHTML = year;
+// 		}else{
+// 			x[i + 1].innerHTML = date + 1;
+// 			y[i + 1].innerHTML = month;
+// 			z[i + 1].innerHTML = year;
+// 		}
+// 	}else{
+// 		if(date===30){
+// 			x[i + 1].innerHTML = 1;
+// 			y[i + 1].innerHTML = month + 1;
+// 			z[i + 1].innerHTML = year;
+// 		}else{
+// 			x[i + 1].innerHTML = date + 1;
+// 			y[i + 1].innerHTML = month;
+// 			z[i + 1].innerHTML = year;
+// 		}
+// 	}
+// }
+
+// function compare(){
+//     for(var m = 0; m <= nums.length; m++){
+//         if(month === nums[m]){
+//             return true;
+//         }
+//     }
+// }
